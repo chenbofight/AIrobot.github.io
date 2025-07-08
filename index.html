@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
+<title>Research on key technology of intelligent robot </title>
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.item img {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.item p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+</style>
+<style>
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 70px;
+  background-image: url(rvc.png);
+  background-size: cover;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.picItem {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-right:20px;
+}
+
+.picItem p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#layout-menu {
+  background-color:	#FCFCFC;
+  width: 200px;
+  height: 100%;
+}
+
+#layout-menu .main-menu {
+  margin: 20px 5px;
+  border-bottom: 1px solid 		#F2F2F2;
+}
+
+.menu-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#layout-menu div {
+  margin-top: 20px;
+}
+
+#layout-content {
+  padding: 0 15px;
+}
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background-color: #007BB5;
+}
+</style>
+
+<style>
+  body {
+    font-family: "Times New Roman", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+</style>
+</head>
+
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+  <div class="menu-content">
+    <div>
+      <img src="ai.png" style="width: 80px; height: 80px;" />
+    </div>
+<!--    <div class="main-menu"> MENU </div>-->
+    <div class="menu-item"><a href="index.html" class="current">Home</a></div>
+    <div class="menu-item"><a href="https://github.com/">GitHub</a></div>
+    <div class="menu-item"><a href="http://robot.hnu.edu.cn/">RVC Lab</a></div>
+  </div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>智能机器人关键技术研究 </h1>
+</div>
+<hr>
+<h2>关于此领域</h2>
+<p>智能机器人的核心技术涵盖环境感知（多模态传感器与SLAM）、智能决策（深度学习/强化学习/模仿学习）、运动规划（路径搜索与优化）、高精度控制（自适应/力控）及系统协同（ROS/边缘计算），通过“感知-决策-执行”闭环实现自主作业，推动工业、服务等领域的智能化应用。。
+
+
+
+</p>
+<!--<p style="text-align:center;">-->
+<!--    <img src=overallv1.png width="1000px" height="447px"></p>-->
+
+<div style="display: flex;">
+  <div class="picItem">
+    <img src=shiyanshi.png width="750px" height="400px">
+    <p >面向智能生化实验的多机器人协作共融关键技术</p>
+  </div>
+  <div class="picItem">
+    <img src=gongrong.png width="750px" height="400px">
+    <p >配药制药双臂共融机器人关键技术</p>
+  </div>
+  <div class="picItem">
+    <img src=cotro.png width="750px" height="400px">
+    <p >自主无人系统智能控制器技术</p>
+  </div>
+  <div class="picItem">
+    <img src=mid.png width="750px" height="400px">
+    <p >高端智能控制器的即插即用中间件及工具软件技术</p>
+  </div>
+</div>
+<hr>
+<h2>一些 Demos</h2>
+<h3>(1)面向生化实验的双臂机器人任务与运动规划方法：多模态大模型驱动的智能决策</h3>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=LMM.png width="800px" height="400px">
+      <p >多模态大模型驱动的智能决策框架</p>
+    </div>
+    <div class="picItem">
+      <img src=LMM2.png width="830px" height="400px">
+      <p >任务与运动规划</p>
+    </div>
+  </div>
+ <p>基于国家重大需求，推动自动化与机器人等新一代信息技术在药物发现与研发领域中的应用，具有重要的科学意义与经济价值。针对目前生化实验室机器人操作依赖固定程序、缺乏灵活性的问题，本文提出了一种融合多模态大模型与动态运动基元（DMP）的方法，赋能双臂机器人实现面向任务场景的智能化操作.</p >
+<p><b>1. DMP实现双臂操作泛化</b>：通过DMP模型学习与编码典型生化实验流程（如加液、摇匀、取样等）的运动模式，使双臂机器人能在不同实验任务中快速复现高效稳定的操作动作.</p >
+<p><b>2. 多模态大模型引导理解与规划</b>：引入具备语言-视觉推理能力的大模型，通过接收实验指令（自然语言）与视觉输入（实验台状态图像），实现对具体实验场景的理解，并输出合理操作意图。</p >
+<p><b>3. 感知-认知-动作融合机制</b>：大模型负责对任务进行语义解析与情境判断，DMP模型负责底层动作执行，通过中间语义桥接实现从任务意图到运动控制的高效映射.</p >
+<p><b>4. pH实验验证</b>：在双臂机器人自主执行标准pH实验流程中，系统能够根据语言指令正确识别实验阶段，结合视觉信息完成取试剂、滴加、反应等操作，展现出良好的任务完成能力与自主性。
+</p > <p><b>5. 推广意义</b>：该方法展现了结合大模型推理与DMP执行的通用生化实验操作潜力，为未来药物研发实验平台的智能化升级提供了可行路径.</p >
+<h3>(2)基于间隙推理神经网络的机械臂高性能运动规划算法(CIMAP)</h3>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=CIMAP.png width="850px" height="400px">
+      <p >CIMAP算法框架</p>
+    </div>
+    <div class="picItem">
+      <img src=CIMAP2.png width="800px" height="400px">
+      <p >路径探索与优化</p>
+    </div>
+    <div class="picItem">
+      <img src=CIMAP3.png width="850px" height="400px">
+      <p >实验结果</p>
+    </div>
+    </div>
+  </div>
+<p>在这个工作中，我们提出了一种基于间隙推理神经网络的机械臂高性能运动规划算法(CIMAP):
+<p><b>1.间隙推理神经网络（CIN）模型设计</b>: 任务空间体素分割，采用间隙推理神经网络模型学习机械臂到任务空间距离。</p>
+
+<p><b>2.批量双向扩展机制设计</b>: 基于CIN批量双向扩展，快速找到一条可行路径</p>
+
+<p><b>3.迭代优化机制设计</b>: 基于CIN筛选候选捷径，发现更优路径。</p>
+
+<p><b>4.路径安全修复</b>: 使用OBB碰撞检测，对碰撞路径进行修复，确保绝对安全。</p>
+
+<p>通过这些步骤，我们可以实现了一种高性能的机械臂运动规划系统。</p>
+
+<h3>(3)基于成对间隙推理神经网络的双臂机器人协同运动规划算法(PCL-CMP)</h3>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=PCL.png width="850px" height="400px">
+      <p >PCL-CMP算法框架</p>
+    </div>
+    <div class="picItem">
+      <img src=PCL2.png width="890px" height="400px">
+      <p >实验结果</p>
+    </div>
+    </div>
+  </div>
+<p>在这个工作中，我们提出了一种基于成对间隙推理神经网络的双臂机器人协同运动规划算法(PCL-CMP):
+<p><b>1.双臂机器人碰撞检测框架（PCN-BCE）</b>: 通过使用2个PCN分别实现双臂自碰撞估计与环境障碍物碰撞检测。</p>
+
+<p><b>2.自适应步长批量扩展</b>: 基于PCN-BC自适应步长批量扩展，快速找到一条双臂机器人可行路径</p>
+
+<p><b>3.批量路径优化机制</b>: 基于PCN-BCE批量选候选捷径，发现双臂机器人更优路径。</p>
+
+<p><b>4.路径安全修复</b>: 对双臂机器人碰撞路径进行修复，确保绝对安全。</p>
+
+<p>通过这些步骤，我们可以实现了一种双臂机器人协同运动规划系统。</p>
+<h3>(4)面向工业液体处理的双臂异步协作DMP-MPC集成框架</h3>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=DMP.png width="850px" height="400px">
+      <p >PCL-CMP算法框架</p>
+    </div>
+    <div class="picItem">
+      <img src=DMP2.png width="890px" height="400px">
+      <p >实验结果</p>
+    </div>
+  </div>
+<p>在本工作中，我们针对制药等工业环境中对液体搬运的高精度时空协作需求，提出了一种将动态运动原型（DMPs）与模型预测控制（MPC）相结合的新型框架。该框架利用共享典型系统（canonical system）同步两臂 DMPs 模型，并在 DMPs 运动方程中引入由 MPC 实时生成的耦合项，持续优化轨迹形状和末端精度，从而显著提升双臂异步任务的可靠性与精度。
+<p><b>1. 双臂 DMPs 建模与同步</b>：为左右两臂分别建立独立的 DMPs 模型，通过共享的典型系统保证时间基准一致，实现异步动作的同步协调.</p >
+<p><b>2. 原始 DMPs 局限分析</b>：传统 DMPs 往往难以精准复现复杂轨迹形状，且末端位置容易出现偏差，在液体搬运等对终点精度要求极高的任务中效果不足.</p >
+<p><b>3. MPC 耦合项设计</b>：在 DMPs 的形状项与收敛项基础上加入由 MPC 生成的耦合反馈项，通过在线优化获得最优控制输入，实现轨迹形状与末端精度的双重控制.</p >
+<p><b>4. 数值实验验证</b>：在六组数值实验中，对比原始 DMPs 方法，本方法在双臂末端位置误差控制效率上平均提升了 81.37%. </p >
+<p><b>5. 实际机器人验证</b>：使用两台 ABB GoFa CRB 15000 机器人，对工业液体处理任务进行实地验证，结果表明方法在真实环境中同样具备优异的轨迹跟踪和末端定位性能。</p >
+
+<h3>(5)高端智能控制器的即插即用中间件软件设计</h3>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=mw_dds.png width="950px" height="400px">
+      <p >集成DDS的即插即用型轻量化中间件设计</p>
+    </div>
+    <div class="picItem">
+      <img src=mw_sensor.png width="900px" height="400px">
+      <p >传感器设备管理框架</p>
+    </div>
+    <div class="picItem">
+      <img src=jifei.png width="850px" height="400px">
+      <p >极飞农业机器人应用验证</p>
+    </div>
+    </div>
+  </div>
+<p>在这个工作中，我们自主设计了应用于国产化硬件平台的自主无人系统的即插即用中间件软件:
+<p><b>1.中间件框架设计</b>: 设计传感器即插即用中间件框架，包括传感器驱动封装库（Sensor Driver）、设备管理模块（Sensor Manage）、数据分发接口包（Sensor Library）和相关工具（Sensor Tools）</p>
+
+<p><b>2.Sensor_driver设计</b>: 基于多态的思想，对不同传感器的驱动以插件化的形式接入。</p>
+
+<p><b>3.Sensor_Manage设计</b>: 设计了基于UDEV的传感器即插即用后台系统，对插入的传感器进行统一的驱动调度与数据发布。</p>
+
+<p><b>4.通信框架设计</b>: 设计基于DDS的分布式点对点快速通信框架，实现常用的数据发布订阅机制，QOS数据校验机制。</p>
+
+<p><b>5.任务调度框架设计</b>: 设计基于协程的任务调度框架，用于自主无人系统中用户级的任务调度可信配置与运行。</p>
+
+<p>通过这些步骤，我们可以实现一个自主无人系统控制器的即插即用中间件，达到传感器集中管理的目的。</p>
+
+ <h3>(6)面向复杂障碍物环境下基于DIBNN的多机器人协同区域搜索算法</h3>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=tase.png width="950px" height="400px">
+      <p >基于DIBNN的多机器人协同区域搜索框架</p>
+    </div>
+    <div class="picItem">
+      <img src=tasejg.png width="800px" height="400px">
+      <p >实验结果</p>
+    </div>
+</div>
+<p>在这个工作中，提出了改进的BNN模型（IBNN）,同时，为了帮助多机器人应对复杂的障碍物环境，我们进一步提出了一种协同搜索机制，其中包含两层IBNN（dual IBNN, IBNN）,第一层IBNN引导机器探测未搜索区域，第二层IBNN在机器人陷入局部最优状态时引导机器人跳出该状态，从而提升多机器人在复杂障碍物环境下的搜索效率:
+
+<p><b>1.改进BNN模型</b>: 原始BNN的活性值主要受外部输入和周围神经元活性值影响，在复杂障碍物环境下将对神经元的正活性值的全局传播造成干扰，因此我们首先对BNN的特性进行了改进。</p>
+
+<p><b>2.第一层IBNN启动</b>: 机器人选择周围活性值最大的神经元对应的栅格作为下一步运动位置。</p>
+
+<p><b>3.局部最优状态判定</b>: 如果某个机器人其周围区域都被搜索，并且持续未发现新的未探测区域，则进入步骤4，否则继续执行步骤2.</p>
+
+<p><b>4.第二层IBNN启动</b>: 选择出机器人群体中状态最优的个体，即“最优机器人”,第二层IBNN的活性值将引导处于局部最优机器人向最优机器所处位置运动，到达指定位置后，返回步骤1。</p>
+
+<p><b>5.程序终止判定</b>: 如果机器人已经完全搜索任务区域完成或者搜索时间达到设定阈值，则终止搜索任务，否则，机器人将继续执行步骤2-4。</p>
+
+<p>通过这些步骤，我们就可以实现一个基于DIBNN多机器人协同区域搜索算法，引导机器人在未知的复杂障碍物环境下完成指定区域的快速搜索。</p>
+<hr>
+<h2>当前研究方向</h2>
+<ul>
+<div style="display: flex;">
+  <div class="picItem">
+    <img src=SH.png width="900px" height="450px">
+    <p >生化实验室多机器人感知与控制关键技术</p>
+  </div>
+  <div class="picItem">
+    <img src=JS.png width="900px" height="450px">
+    <p >具身智能机器人关键技术</p>
+  </div>
+</ul>
+<hr>
+<h2>依托项目</h2>
+<ul>
+<li><p>面向智能生化实验复杂操作的多机器人协作共融关键技术研究.（国家自然科学基金重点项目）
+</li>
+<li><p>面向生物疫苗制造的配药制药共融机器人关键技术研究.（国家自然科学基金重大研究计划-重点项目）</p>
+</li>
+<li><p>自主无人系统的开放通用高端智能控制器.（科技创新2030-“新一代人工智能”重大项目）</p>
+</li>
+
+</ul>
+<hr>
+<h2>代表性成果</h2>
+<ol>
+<li><p>B. Chen, H. Zhang*, F. Zhang, et al. CIMAP: A High-Performance Motion Planning Algorithm for  Robotic Manipulators in Complex Environments Using Clearance Inference Network，IEEE Transactions  on Systems, Man, and Cybernetics: Systems，2025. doi：10.1109/TSMC.2025.3578828. [<a href="https://ieeexplore.ieee.org/document/11053125">文章链接</a>]</p>
+</li>
+<li><p>K. Li, H. Zhang*, B. Chen, Y. Jiang, C. Yang and Y. Wang, "Modified Dynamic Movement Primitives With Control: A Novel Trajectory Planning Framework for Dual-Arm Asynchronous Tasks," in IEEE Transactions on Industrial Electronics, doi：10.1109/TIE.2025.3549105. [<a href="https://ieeexplore.ieee.org/document/10945803">文章链接</a>]</p>
+</li>
+<li><p>B. Chen, H. Zhang*, F. Zhang, Y. Jiang, Z. Miao, H. Yu, Y. Wang, "DIBNN: A Dual-Improved-BNN Based Algorithm for Multi-Robot Cooperative Area Search in Complex Obstacle Environments," in IEEE Transactions on Automation Science and Engineering, vol. 22, pp. 2361-2374, 2025. [<a href="https://ieeexplore.ieee.org/document/10477943">文章链接</a>]</p>
+</li>
+<li><p>B. Chen, H Zhang, F. Zhang, Y, Wang, "A Multirobot Distributed Collaborative Region Coverage Search Algorithm Based on Glasius Bio-inspired Neural Network," in IEEE Transactions on Cognitive and Developmental Systems, 2022, doi: 10.1109/TCDS.2022.3218718. [<a href="https://ieeexplore.ieee.org/document/9933913">文章链接</a>]</p>
+</li>
+<li><p>H. Zhang*, Z. Liang, C. Li, H. Zhong*, L. Liu, C. Zhao, Y. Wang, Q. M. Jonathan Wu, "A Practical Robotic Grasping Method by Using 6-D Pose Estimation With Protective Correction," in IEEE Transactions on Industrial Electronics, vol. 69, no. 4, pp. 3876-3886, 2022. [<a href="https://ieeexplore.ieee.org/document/9422206">文章链接</a>]</p>
+</li>
+<li><p>H. Zhang*, Z. XU, B. Chen, et al. An Adaptive Nearest Point Routing Method Based on Charging Nest  Deployment Optimization for UAVs Power Tower Inspection, IEEE Transactions on Industrial Informatics, 2025. doi: 10.1109/TII.2025.3574421. (录用)</p>
+</li>
+<li><p>B. Chen, H. Zhang*, K. Li, et al. PCL-CMP: A Novel Dual-Arm Robotic Cooperative Motion Planning Algorithm Leveraging Pairwise Clearance Learning, IEEE Transactions on Industrial Electronics, 2025. (Major Revision) .</p>
+</li>
+<li><p>张辉, 李康*, 陈波, 刘立柱, 江一鸣, 王耀南. 面向生化实验的双臂机器人智能规划框架: 多模态大模型驱动的任务与运动规划. 中国科学:信息科学, 2025.（录用） </p>
+</li>
+<li><p>陈波, 张辉*, 江一鸣, 钟杭, 王耀南, "基于分层仿生神经网络的多机器人协同区域搜索算法," 自动化学报, 2025, 51(4):890−902. [<a href="http://www.aas.net.cn/cn/article/doi/10.16383/j.aas.c240458">文章链接</a>]</p>
+</li>
+ <li><p>张辉, 李康*, 刘立柱, 陈波, 樊叶心, 江一鸣, 王耀南. 面向智能生化实验室的机器人感知、规划与控制技术. 自动化学报, 2025. doi:  10.16383/j.aas.c220741. [<a href="http://aas.net.cn/cn/article/doi/10.16383/j.aas.c220741">文章链接</a>]</p>
+</li>
+<li><p>罗鑫泳, 张辉*, 阳炼, 陈波, 钟杭.面向智能控制器的传感器即插即用中间件设计与实现，国家工业软件大会（NISC2023）<p>
+</li>
+</ol>
+<p><b>Note</b>: * indicates the corresponding author.</p>
+<hr>
+<h2>授权发明专利与软著</h2>
+<ol>
+
+<li><p>张辉; 陈波; 黄长庆; 李康; 江一鸣; 汪渊; 杨敏; 王立坤; 王耀南;双臂机器人碰撞估计方法、系统、计算机设备和存储介质, 2025-05-02, 中国, ZL202510192895.1.（已授权）</p>
+<li><p>张辉; 陈波; 李康; 徐辉; 江一鸣; 汪渊; 杨敏; 王立坤;等. 面向强耦合场景的双臂机器人运动规划方法、系统和设备, ZL202510549565.3 (授权)（已授权）</p>
+<li><p>张辉; 陈波; 尹松涛; 江一鸣; 钟杭; 李康; 王立坤; 谢核; 王耀南;动态场景下基于间隙推理神经网络的机械臂碰撞估计方法, 2024-10-18, 中国, ZL202411009417.4.（已授权）<p>
+<li><p>张辉; 陈波; 李康; 徐辉; 江一鸣; 汪渊; 杨敏; 王立坤; 王耀南;面向人机协作共融场景的机械臂实时运动规划方法及系统, 2025-04-11, 中国, ZL202411945875.9.（已授权）</p>
+<li><p>张辉; 陈波; 李康; 徐辉; 江一鸣; 汪渊; 杨敏; 王立坤; 王耀南;一种基于批量碰撞检测的机械臂运动路径迭代优化方法, 2025-03-28, 中国, ZL202411824839.7.（已授权）<p>
+<li><p>张辉; 陈波; 李康; 徐辉; 江一鸣; 汪渊; 杨敏; 王立坤; 王耀南;面向多机协作共融的双臂机器人协同运动规划方法及系统, 2025-03-21, 中国, ZL202411947228.1.（已授权）<p>
+<li><p>张辉; 陈鑫杰; 陈波; 江一鸣; 李康; 谢核; 毛建旭; 王耀南;一种基于人手轨迹预测的机械臂路径重规划方法, 2025-06-17, 中国, ZL202510286742.3.（已授权）</p>
+<li><p>张辉; 许智文; 江一鸣; 陈波; 李康; 钟杭; 毛建旭; 王耀南;一种面向动态医药场景下的机械臂路径规划与重规划方法, 2025-02-07, 中国, ZL202411514549.2.（已授权）<p>
+<li><p>张辉; 黄灿圣; 阳炼; 钟杭; 陈波; 江一鸣; 谢核; 曾鹏辉; 罗鑫泳;一种智能控制器的多传感器接入与数据管理微架构系统, 2024-12-20, 中国, ZL202411266450.5.（已授权）<p>
+<li><p>张辉; 李康; 陈波; 徐辉; 江一鸣; 钟杭; 毛建旭; 王耀南;一种基于动态运动基元的双臂机器人自适应技能学习方法, 2025-03-07, 中国, ZL202411698119.0.（已授权）<p>
+<li><p>张辉; 阳炼;罗鑫泳;钟杭;陈波;毛建旭;王耀南;一种面向自主无人系统的传感器即插即用中间件, 2023-09-22, 中国, ZL202310695443.6.（已授权）</p>
+<li><p>张辉;徐涛;钟杭;陈波;刘理;江一鸣;袁小芳;王耀南;一种基于先验视觉引导的智能机器人全局定位方法及系统, 2023-11-21, 中国, ZL202311068052.8.（已授权）<p>
+<li><p>张辉;周熙栋;钟杭;徐涛;缪志强;王耀南;一种基于信赖域算法的室内移动机器人定位方法, 2023-12-01, 中国, ZL202311032737.7.<p>
+<li><p>张辉;王可;曹意宏;刘立柱;陈煜嵘;袁小芳;毛建旭;王耀南;基于模仿与强化学习的医药机器人自主避障方法及系统, 2022-09-09, 中国, ZL202210694891.X.<p>
+<li><p>张辉; 黄长庆; 钟杭; 江一鸣; 罗鑫泳; 尹松涛。面向视觉传感器的即插即用中间件软件（软著）流水号：2023R11L0967569，申请时间：2023.6.5</p>
+<li><p>张辉; 梁志佳; 胡非易; 钟杭; 陈波; 罗鑫泳; 尹松涛; 阳炼; 黄长庆。面向高端智能控制器的自主学习可视化软件（软著）流水号：2023R11L1047903，申请时间：2023.6.14</p>
+</ol>
+<h2>项目组成员</h2>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=ZH.png width="120px" height="180px">
+      <p >张辉 教授 </p>
+      <p >长江学者</p>
+    </div>
+    <div class="picItem">
+      <img src=jym.png width="120px" height="180px">
+      <p >江一鸣</p>
+      <p >副教授</p>
+    </div>
+    <div class="picItem">
+      <img src=zha.png width="120px" height="180px">
+      <p >钟杭</p>
+      <p >副教授</p>
+    </div>
+    <div class="picItem">
+      <img src=fyx.jpg width="120px" height="180px">
+      <p >樊叶心</p>
+      <p >在站博士后</p>
+    </div>
+    <div class="picItem">
+      <img src=Bo_Chen.jpg width="120px" height="180px">
+      <p >陈波（在读）</p>
+      <p >博士四年级</p>
+    </div>
+    <div class="picItem">
+      <img src=li_kan.jpg width="120px" height="180px">
+      <p >李康（在读）</p>
+      <p >博士二年级</p>
+    </div>
+    <div class="picItem">
+      <img src=xuhui.jpg width="120px" height="180px">
+      <p >徐辉（在读）</p>
+      <p >博士二年级</p>
+    </div>
+    <div class="picItem">
+      <img src=rzd.jpg width="120px" height="180px">
+      <p >阮昭迪</p>
+      <p >嵌入式工程师</p>
+    </div>
+    <div class="picItem">
+      <img src=lp.jpg width="120px" height="180px">
+      <p >刘鹏</p>
+      <p >组态软件工程师</p>
+    </div>
+    <div class="picItem">
+      <img src=yang.jpg width="120px" height="180px">
+      <p >阳炼（硕士毕业）</p>
+      <p >去向：高通</p>
+    </div>
+    <div class="picItem">
+      <img src=sxx.jpg width="120px" height="180px">
+      <p >孙鑫鑫（研三）</p>
+      <p >硕士</p>
+    </div>
+    <div class="picItem">
+      <img src=zeng.jpg width="120px" height="180px">
+      <p >曾鹏辉（研三）</p>
+      <p >硕士</p>
+    </div>
+    <div class="picItem">
+      <img src=hcs.jpg width="120px" height="180px">
+      <p >黄灿圣（研三）</p>
+      <p >硕士</p>
+    </div>
+    <div class="picItem">
+      <img src=cxj.jpg width="120px" height="180px">
+      <p >陈鑫杰（研三）</p>
+      <p >硕士</p>
+    </div>
+    <div class="picItem">
+      <img src=lxd.jpg width="120px" height="180px">
+      <p >廖湘东（研二）</p>
+      <p >硕士</p>
+    </div>
+    <div class="picItem">
+      <img src=kcw.jpg width="180px" height="180px">
+      <p >孔垂旺（研二）</p>
+      <p >硕士</p>
+    </div>
+    <div class="picItem">
+      <img src=pzy.jpg width="120px" height="180px">
+      <p >彭振宇（研二）</p>
+      <p >硕士</p>
+    </div>
+  </div>
+  <h2>学术&活动</h2>
+    <div style="display: flex;">
+      <div class="picItem">
+        <img src=jqr.png width="350px" height="300px">
+        <p >学术竞赛(研究生机器人大赛全国一等奖)</p>
+      </div>
+      <div class="picItem">
+        <img src=rgzn.jpg width="390px" height="300px">
+        <p >学术竞赛(研究生人工智能大赛全国二等奖)</p>
+      </div>
+      <div class="picItem">
+        <img src=game.jpg width="350px" height="300px">
+        <p >学术竞赛(研电赛华中赛区一等奖)</p>
+      </div>
+
+      <div class="picItem">
+        <img src=huiyi.jpg width="390px" height="300px">
+        <p >学术会议</p>
+      </div>
+      <div class="picItem">
+        <img src=hezuo.jpg width="350px" height="300px">
+        <p >校企合作(浙大、湖大、华为、中科院自动化所等)</p>
+      </div>
+      <div class="picItem">
+        <img src=hehe.jpg width="380px" height="300px">
+        <p >校企合作(浙大、湖大、华为、中科院自动化所等)</p>
+      </div>
+      <div class="picItem">
+        <img src=张辉.jpg width="330px" height="300px">
+        <p >张辉教授现场参观讲解</p>
+      </div>
+    </div>
+  <p><b>如果您对此领域感兴趣并想加入我们的研究, 请联系我(chenbo2fight@hnu.edu.cn)或者张辉老师(zhanghuihby@126.com).谢谢!<b></p>
+</td>
+</tr>
+</table>
+</tr>
+</table>
+<footer class="footer">
+  <div>
+    <p>National Engineering Research Center of Robot Vision Perception and Control Technology (RVC)</p>
+    <p>Hunan University</p>
+    <p>Changsha, Hunan, P.R. China</p>
+  </div>
+  <div>
+    <p>Copyright  RVC 2023</p>
+    <p>Above Site All right reserved.</p>
+  </div>
+</footer>
+
+  <script>
+    var doc = document
+    function addScroll ()　{
+      var menu = doc.getElementsByClassName('menu-content')[0]
+      const top = doc.documentElement.scrollTop
+      menu.style= `margin-top: ${top}px` 
+    }
+
+    doc.addEventListener('scroll', addScroll.bind(this))
+  </script>
+</body>
+</html>
